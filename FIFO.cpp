@@ -37,6 +37,7 @@ deque<int> insertToQueue(int value){
 			return currentQueue;
 	}
 	else{
+		// FIFO 
 		page_fault += 1;
 		if (currentQueue.size() == frame_size) {
 			int valueToReplace = orderQueue.front();
