@@ -61,7 +61,7 @@ deque<int> insertToQueue(int value, int index) {
                   // and if some are not present then we can choose either element from that tempQueue
                   for (int i = index; i < reference_string_size; i++){
                         for (int j = 0; j < currentQueue.size(); j++){
-                              if (currentQueue[j] == reference_string[i] and tempQueue.size() != 1) {
+                              if (currentQueue[j] == reference_string[i] and countPositives(tempQueue) != 1) {
                                     tempQueue[j] = -1;
                                     lastToReplace = currentQueue[j];
                                     break;
